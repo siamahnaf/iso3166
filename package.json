@@ -1,0 +1,43 @@
+{
+  "name": "@siamf/iso3166",
+  "version": "4.3.1",
+  "description": "A tiny, zero-dependency dataset and utilities for ISO-3166 country codes (alpha-2/alpha-3/numeric) and names. Lookup by code or name, validate inputs, and map between formats—fast and tree-shakeable.",
+  "homepage": "https://github.com/siamahnaf/iso3166",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+  },
+  "author": {
+    "name": "Siam Ahnaf",
+    "email": "mail@siamahnaf.com",
+    "url": "https://www.siamahnaf.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "iso3166",
+    "country-data-code",
+    "country code",
+    "calling code",
+    "currency-symbol",
+    "currency-code",
+    "country-name",
+    "react",
+    "node"
+  ],
+  "repository": {
+    "type": "git",
+    "directory": "https://github.com/siamahnaf/iso3166",
+    "url": "https://github.com/siamahnaf/iso3166"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
+  }
+}
